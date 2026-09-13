@@ -35,6 +35,7 @@ Issues = "https://github.com/ppsyOps/psse_utils/issues"
 [project.scripts]
 flowgate-key-facilities = "psse_utils.flowgate_key_facilities:main"
 filter-taralog-notcnv = "psse_utils.filter_taralog_notcnv:main"
+log-min-to-con = "psse_utils.log_min_to_con:main"
 
 [build-system]
 requires = ["hatchling"]
