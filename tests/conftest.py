@@ -8,6 +8,9 @@ Fixtures live in tests/data/:
 - taralog_sample.txt, sample_a.con, sample_b.con: synthetic (anonymized,
   shortened) PowerGEM/TARA log and PSS/E .con fixtures used by
   filter_taralog_notcnv tests. None of these contain real system data.
+- log_min_sample.txt: a synthetic, CSV-formatted TARA "mini log" with two
+  snapshots, used by log_min_to_con tests. Fabricated bus/gen/branch/xfrmr
+  names; not real system data.
 """
 from __future__ import annotations
 
@@ -48,3 +51,8 @@ def con_file_a() -> Path:
 @pytest.fixture(scope="session")
 def con_file_b() -> Path:
     return DATA_DIR / "sample_b.con"
+
+
+@pytest.fixture(scope="session")
+def log_min_file() -> Path:
+    return DATA_DIR / "log_min_sample.txt"

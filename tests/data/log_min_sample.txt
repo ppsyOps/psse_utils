@@ -1,0 +1,33 @@
+FAKE TARA mini log header text (not real system data).
+
+------------------ Creating snapshot 001
+========= Report on generator status/dispatch changes for the period FAKE-001 (EST)
+From the Base Case
+BusNum,BusName,Volt,Area,Zone,ID,BasCasMW,BasCsSta,PMin,PMax,Type,newSetPn,Date1,Date2
+100001,FAKEGEN A1,13.8,10,1,1P,0.1,0,-10.0,-10.0,Outage,0.0,2025-01-01 00:00,2030-01-01 00:00
+========= Total 1 Generators changed status
+========= Report on branch status changes for the period FAKE-001 (EST)
+From the Base Case
+FrBus,FrName,FrFiller,FrV,FrZn,ToBus,ToName,ToV,ToAr,ToZn,CKT,Section,Mt,RateA,RateB,RateC,Type
+200001,FAKEBUS A,filler,138,1,200002,FAKEBUS B,138,1,1,1,1,F,900.0,900.0,900.0,Open
+========= 1 Branches changed status
+========= Report on 3-winding transformers status changes for the period FAKE-001 (EST)
+From the Base Case
+XfrmrName,INum,IName,IV,JNum,JName,JV,KNum,KName,KV,Star,S,CktFiller,CKT,Type
+FAKEXFMR_3W,300001,FAKE W1,230,300002,FAKE W2,345,300003,FAKE W3,23.0,900001,S,1,1,Open
+========= 1 3-winding transformers changed status
+
+------------------ Creating snapshot 002
+========= Report on generator status/dispatch changes for the period FAKE-002 (EST)
+From the Base Case
+BusNum,BusName,Volt,Area,Zone,ID,BasCasMW,BasCsSta,PMin,PMax,Type,newSetPn,Date1,Date2
+100001,FAKEGEN A1,13.8,10,1,1P,0.1,0,-10.0,-10.0,Outage,0.0,2025-01-01 00:00,2030-01-01 00:00
+100002,FAKEGEN B1,13.8,10,1,2P,0.2,0,-20.0,-20.0,Outage,0.0,2025-01-02 00:00,2030-01-02 00:00
+========= Total 2 Generators changed status
+========= Report on branch status changes for the period FAKE-002 (EST)
+From the Base Case
+FrBus,FrName,FrFiller,FrV,FrZn,ToBus,ToName,ToV,ToAr,ToZn,CKT,Section,Mt,RateA,RateB,RateC,Type
+200001,FAKEBUS A,filler,138,1,200002,FAKEBUS B,138,1,1,1,1,F,900.0,900.0,900.0,Open
+========= 1 Branches changed status
+========= Report on 3-winding transformers status changes for the period FAKE-002 (EST)
+========= No 3-winding transformers changed status for the period FAKE-002 (EST)

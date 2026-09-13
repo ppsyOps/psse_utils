@@ -49,6 +49,25 @@ contingency blocks whose name matches a NotCnv contingency found anywhere in
 
 Full options: `filter-taralog-notcnv --help`.
 
+### `log-min-to-con`
+
+Build a PSS/E contingency (`.con`) file from the outages reported in a TARA/
+PowerGEM "mini log" file (e.g. `log_hourly-min.txt`). Every generator, branch,
+or 3-winding transformer outage found in any snapshot becomes one
+contingency; duplicates across snapshots are merged.
+
+~~~
+log-min-to-con --log-filepath log_hourly-min.txt --out-dir out/ --no-open-con-file
+~~~
+
+Writes `log_min_contingencies.con` plus (unless `--no-csv`) cumulative outage
+tables (`log_min_gen_cons.csv`, `log_min_branch_cons.csv`,
+`log_min_3-winding_cons.csv`) and, for each pair of consecutive snapshots, a
+diff CSV showing which outages appeared or disappeared between them
+(`gen_outage_diffs_<i-1>-<i>.csv`, etc.).
+
+Full options: `log-min-to-con --help`.
+
 ## Adding a script
 
 1. Create `src/psse_utils/<name>.py` with the **logic as importable functions**
